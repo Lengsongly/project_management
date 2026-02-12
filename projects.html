@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Projects Showcase - Student Portfolio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#135d6c",
+            "background-light": "#f8fafc",
+            "background-dark": "#0f172a",
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+
+<body
+  class="antialiased font-sans text-slate-900 bg-background-light dark:bg-background-dark dark:text-slate-100 transition-colors duration-300">
+
+  <!-- Header -->
+  <header
+    class="sticky top-0 z-50 w-full border-b border-[#e8f1f3] dark:border-[#3a444d] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        
+        <h1 class="text-lg font-extrabold tracking-tight">Portfolio</h1>
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="education.html">Education</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="skills.html">Skills</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="projects.html">Projects</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <button
+        class="bg-primary hover:bg-[#158096] text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+        Hire Me
+      </button>
+    </div>
+  </header>
+
+  </div>
+  </div>
+  <main class="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-24">
+    <div class="mb-16 md:mb-20">
+      <h1
+        class="text-[#0f181a] dark:text-[#f8fbfb] text-5xl md:text-7xl font-black leading-[1.1] tracking-[-0.04em] mb-6">
+        Featured <span class="text-primary italic font-light">Work</span>
+      </h1>
+      <p class="text-[#538893] dark:text-[#a0bfc4] text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
+        A showcase of functional web applications and design systems, developed with a focus on performance,
+        accessibility, and clean code.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
+      <div
+        class="project-card group flex flex-col bg-white dark:bg-[#1a2b2e] rounded-2xl overflow-hidden border border-[#e8f0f2] dark:border-[#2a3e42] shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div class="overflow-hidden aspect-video bg-[#e8f0f2] dark:bg-[#1e2f32]">
+          <div aria-label="Project Screenshot Placeholder"
+            class="project-image w-full h-full bg-center bg-no-repeat bg-cover" role="img"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA70dMMwG9XPO2EOM78lRGRjtmwXp469VoLcp-IDS1vAXxcL9AKMKTWg-C5psW5DqhpfheTPle6NFEFi5fV4qveoxgd99T1WImgO3QifET8ICPZcEeharQOFxYuFdjHb39Rq3zTm3dOgL8OPyeleR1M4U5valDaWhTBpYH2YdU6tAkQ1xWcnlP0eOXWCf87Lwe-oHitkPmI6xsdgVI4b69HGyfVrsjBLdnbSH-r1lcPKZpaa257IY8Tu3RzQcQ1TZpA756V0LrGl_lJ");'>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex justify-between items-start mb-4">
+            <h3
+              class="text-[#0f181a] dark:text-[#f8fbfb] text-2xl font-bold tracking-tight group-hover:text-primary transition-colors">
+              E-Commerce Architecture</h3>
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Full
+              Stack</span>
+          </div>
+          <p class="text-[#538893] dark:text-[#a0bfc4] text-base leading-relaxed mb-6">
+            A scalable platform designed for high-traffic retailers, featuring a headless CMS integration and real-time
+            inventory management with optimized checkout flows.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Next.js</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">TypeScript</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Tailwind
+              CSS</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">PostgreSQL</span>
+          </div>
+          <div class="mt-auto flex gap-4">
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">visibility</span>
+              View Demo
+            </a>
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg border border-[#e8f0f2] dark:border-[#2a3e42] text-[#0f181a] dark:text-[#f8fbfb] text-sm font-bold hover:bg-[#f8fbfb] dark:hover:bg-[#25393d] transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">code</span>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="project-card group flex flex-col bg-white dark:bg-[#1a2b2e] rounded-2xl overflow-hidden border border-[#e8f0f2] dark:border-[#2a3e42] shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div class="overflow-hidden aspect-video bg-[#e8f0f2] dark:bg-[#1e2f32]">
+          <div aria-label="Project Screenshot Placeholder"
+            class="project-image w-full h-full bg-center bg-no-repeat bg-cover" role="img"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1BXYLNtpcvvYUjV6lhJUHzCpRFt4HIdX7QIvSE5JAwDwfQGUqYjjcaGoHWBl6P2vYTsnOACF1qlq9S46Q92mJyPAn0k5Ta7MS6gLGn_A6KPwLkF6mMMpkVPUQrMWX-URbVQMNJNx0ryLizQNEupwTQTIPPH_NCJJeVvBk-m4BeI14W8T763JWEX5LXlq9Rmq5pb4CB5kzDM2K6tA7L9oh0nw5qfs3oUzEpS9M1ctd_Hl1883Sdmpt1-MRFRFVjYXBQnwFKg2uRiVl");'>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex justify-between items-start mb-4">
+            <h3
+              class="text-[#0f181a] dark:text-[#f8fbfb] text-2xl font-bold tracking-tight group-hover:text-primary transition-colors">
+              Task Management Dashboard</h3>
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Web
+              App</span>
+          </div>
+          <p class="text-[#538893] dark:text-[#a0bfc4] text-base leading-relaxed mb-6">
+            A collaborative productivity tool with drag-and-drop interfaces, team workspaces, and dark mode support.
+            Focused on user experience and rapid interaction.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">React</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Framer
+              Motion</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Firebase</span>
+          </div>
+          <div class="mt-auto flex gap-4">
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">visibility</span>
+              View Demo
+            </a>
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg border border-[#e8f0f2] dark:border-[#2a3e42] text-[#0f181a] dark:text-[#f8fbfb] text-sm font-bold hover:bg-[#f8fbfb] dark:hover:bg-[#25393d] transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">code</span>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="project-card group flex flex-col bg-white dark:bg-[#1a2b2e] rounded-2xl overflow-hidden border border-[#e8f0f2] dark:border-[#2a3e42] shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div class="overflow-hidden aspect-video bg-[#e8f0f2] dark:bg-[#1e2f32]">
+          <div aria-label="Project Screenshot Placeholder"
+            class="project-image w-full h-full bg-center bg-no-repeat bg-cover" role="img"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFba53W3nZplPiv_4GnDXXVgzxxxiobC8FcDiCl-W60UmW07uv9d_vub9sY6tpD1bM1As1bQvAOTErSStcIXCyK5O_6l4rdyo0ODToU32deLxwCjwjYuYpRzT-mcQRRYjPsMeanLCezCqNoIoy1Msc9Ty5ZDkhsIIj9pgDCap6-FOump9j9IXSlPqZkV1p5sjOExQXFGcnGKlb89GqlRN-qjdOiDZyudk90mJ8nYzQCNkw5IW9Xla8JM7yG05iPFSScpWuhBVFdxnP");'>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex justify-between items-start mb-4">
+            <h3
+              class="text-[#0f181a] dark:text-[#f8fbfb] text-2xl font-bold tracking-tight group-hover:text-primary transition-colors">
+              Weather Insights UI</h3>
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Frontend</span>
+          </div>
+          <p class="text-[#538893] dark:text-[#a0bfc4] text-base leading-relaxed mb-6">
+            Data-heavy visualization tool utilizing open-source APIs to display climate trends and local forecasts with
+            beautiful SVG charts.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Vue.js</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">D3.js</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">API
+              Design</span>
+          </div>
+          <div class="mt-auto flex gap-4">
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">visibility</span>
+              View Demo
+            </a>
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg border border-[#e8f0f2] dark:border-[#2a3e42] text-[#0f181a] dark:text-[#f8fbfb] text-sm font-bold hover:bg-[#f8fbfb] dark:hover:bg-[#25393d] transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">code</span>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="project-card group flex flex-col bg-white dark:bg-[#1a2b2e] rounded-2xl overflow-hidden border border-[#e8f0f2] dark:border-[#2a3e42] shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div class="overflow-hidden aspect-video bg-[#e8f0f2] dark:bg-[#1e2f32]">
+          <div aria-label="Project Screenshot Placeholder"
+            class="project-image w-full h-full bg-center bg-no-repeat bg-cover" role="img"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgjT7ilSE_e1xinR6897fWPEGwFtRlsjbw7RB0k6bjd-lq4mKrGhRvfzJzhRFf1EBnyqKgWrGRfyYR4Px6EH-eeo5owRzrQT4VLV3kDe2El_oh0Yn7ApaGJZf4Z43xyZwVuqQKM8fWX7wu8Ogoe7Uv8CLDWUBffd7HV0LNnVQEgtQ3KQaNQ5-saML2EWCHV9lnZJr81N6EZArQbljpjMdYHH_LQ6zYlc2uySONS-LD1FRwMuLBkY1smmfAIT8OfGZUf32-lfT4tRzy");'>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex justify-between items-start mb-4">
+            <h3
+              class="text-[#0f181a] dark:text-[#f8fbfb] text-2xl font-bold tracking-tight group-hover:text-primary transition-colors">
+              Portfolio Design System</h3>
+            <span
+              class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">UI/UX</span>
+          </div>
+          <p class="text-[#538893] dark:text-[#a0bfc4] text-base leading-relaxed mb-6">
+            A reusable component library built for designers and developers, focusing on semantic HTML, atomic design,
+            and accessibility standards.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Storybook</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Sass</span>
+            <span
+              class="px-3 py-1 bg-[#f0f4f5] dark:bg-[#25393d] text-[#538893] dark:text-[#a0bfc4] text-xs font-bold rounded">Figma</span>
+          </div>
+          <div class="mt-auto flex gap-4">
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg bg-primary text-white text-sm font-bold hover:bg-opacity-90 transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">visibility</span>
+              View Demo
+            </a>
+            <a class="flex-1 flex items-center justify-center gap-2 h-12 rounded-lg border border-[#e8f0f2] dark:border-[#2a3e42] text-[#0f181a] dark:text-[#f8fbfb] text-sm font-bold hover:bg-[#f8fbfb] dark:hover:bg-[#25393d] transition-all"
+              href="#">
+              <span class="material-symbols-outlined !text-lg">code</span>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-32 md:mt-48 pt-24 border-t border-[#e8f0f2] dark:border-[#1e2f32]">
+      <div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-8">
+        <h2 class="text-[#0f181a] dark:text-[#f8fbfb] text-4xl md:text-5xl font-black leading-tight tracking-[-0.03em]">
+          Have a project in mind?
+        </h2>
+        <p class="text-[#538893] dark:text-[#a0bfc4] text-lg font-medium">
+          I'm currently available for internships and junior developer positions for 2026. Let's discuss how I can
+          contribute to your team.
+        </p>
+        <a class="flex flex-wrap justify-center gap-4 mt-4" href="contact.html">
+          <button
+            class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary text-white text-base font-bold transition-all hover:scale-105 active:scale-95">
+            <span class="truncate">Contact Me</span>
+          </button>
+
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer class="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-20 py-12 border-t border-[#e8f0f2] dark:border-[#1e2f32]">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div
+        class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-[#538893] dark:text-[#a0bfc4]">
+        <span>© 2024 Leng Songly</span>
+        <span class="size-1 rounded-full bg-primary/40"></span>
+        <span>Portfolio</span>
+      </div>
+      <div class="flex items-center gap-8">
+        <a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2"
+          href="#">
+          <span class="material-symbols-outlined !text-xl">public</span>
+          <span class="text-[10px] hidden sm:inline">LINKEDIN</span>
+        </a>
+        <a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2"
+          href="#">
+          <span class="material-symbols-outlined !text-xl">code</span>
+          <span class="text-[10px] hidden sm:inline">GITHUB</span>
+        </a>
+        <a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2"
+          href="#">
+          <span class="material-symbols-outlined !text-xl">alternate_email</span>
+          <span class="text-[10px] hidden sm:inline">EMAIL</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

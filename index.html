@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Home Page</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#135d6c",
+            "background-light": "#f8fafc",
+            "background-dark": "#0f172a",
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+</head>
+
+<body
+  class="antialiased font-sans text-slate-900 bg-background-light dark:bg-background-dark dark:text-slate-100 transition-colors duration-300">
+
+  <!-- Header -->
+  <header
+    class="sticky top-0 z-50 w-full border-b border-[#e8f1f3] dark:border-[#3a444d] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+
+        <h1 class="text-lg font-extrabold tracking-tight">Portfolio</h1>
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="education.html">Education</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="skills.html">Skills</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="projects.html">Projects</a>
+        <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <button
+        class="bg-primary hover:bg-[#158096] text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+        Hire Me
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="pt-32 pb-20 px-6 min-h-screen flex flex-col items-center">
+    <div class="max-w-[800px] text-center">
+
+      <!-- Avatar -->
+      <div class="mb-10 flex justify-center">
+        <div
+          class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl">
+          <img class="w-full h-full object-cover" src="/image/picown1.jpg" alt="Profile">
+        </div>
+      </div>
+
+      <!-- Intro -->
+      <span class="text-primary font-bold text-sm uppercase tracking-[0.2em]">Welcome</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mt-3">Leng Songly</h1>
+
+      <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-6 leading-relaxed">
+        I am a third-year IT student passionate about web development and creating accessible, user-centered web applications.
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="about.html"
+          class="px-8 py-3.5 bg-primary text-white font-bold rounded-lg hover:opacity-90 shadow-lg shadow-primary/20">
+          Explore About Me
+        </a>
+        <a href="contact.html"
+          class="px-8 py-3.5 border border-slate-200 dark:border-slate-700 font-bold rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="mt-24 max-w-[1000px] w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl border dark:border-slate-700">
+        <span class="material-symbols-outlined text-primary mb-3">school</span>
+        <h3 class="font-bold text-lg mb-2">Education</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          University of Cambodia
+          Bachelor's Degree in Information Technology (IT)
+          Year 3 (Currently Studying)
+        </p>
+      </div>
+
+      <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl border dark:border-slate-700">
+        <span class="material-symbols-outlined text-primary mb-3">code</span>
+        <h3 class="font-bold text-lg mb-2">Top Skills</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          Html, CSS, JavaScript, React, Bootstrap, Tailwind CSS, TypeScript
+        </p>
+      </div>
+
+      <div class="p-6 bg-white dark:bg-slate-800/50 rounded-xl border dark:border-slate-700">
+        <span class="material-symbols-outlined text-primary mb-3">rocket_launch</span>
+        <h3 class="font-bold text-lg mb-2">Latest Project</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          Personal Portfolio Website
+        </p>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <!-- Footer -->
+  
+<footer class="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-20 py-12 border-t border-[#e8f0f2] dark:border-[#1e2f32]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-[#538893] dark:text-[#a0bfc4]">
+<span>© 2024 Leng Songly</span>
+<span class="size-1 rounded-full bg-primary/40"></span>
+<span>Portfolio</span>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined !text-xl">public</span>
+<span class="text-[10px] hidden sm:inline">LINKEDIN</span>
+</a>
+<a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined !text-xl">code</span>
+<span class="text-[10px] hidden sm:inline">GITHUB</span>
+</a>
+<a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined !text-xl">alternate_email</span>
+<span class="text-[10px] hidden sm:inline">EMAIL</span>
+</a>
+</div>
+</div>
+</footer>
+</body>
+
+</html>
