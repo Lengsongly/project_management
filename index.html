@@ -41,10 +41,10 @@
   <header
     class="sticky top-0 z-50 w-full border-b border-[#e8f1f3] dark:border-[#3a444d] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-3">
 
-        <h1 class="text-lg font-extrabold tracking-tight">Portfolio</h1>
-      </div>
+      <h1 class="text-lg font-extrabold tracking-tight">Portfolio</h1>
+
+      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8">
         <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
         <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
@@ -53,12 +53,37 @@
         <a class="text-sm font-semibold hover:text-primary transition-colors" href="projects.html">Projects</a>
         <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
       </nav>
+
+      <!-- Hire Me Button (Desktop Only) -->
       <button
-        class="bg-primary hover:bg-[#158096] text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+        class="hidden md:block bg-primary hover:bg-[#158096] text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+        Hire Me
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+    class="hidden md:hidden bg-white dark:bg-background-dark border-b dark:border-slate-700">
+    <div class="flex flex-col px-6 py-6 space-y-5 font-semibold">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button
+        class="bg-primary hover:bg-[#158096] text-white px-5 py-2 rounded-lg text-sm font-bold transition-all">
         Hire Me
       </button>
     </div>
-  </header>
+  </div>
 
   <!-- Main -->
   <main class="pt-32 pb-20 px-6 min-h-screen flex flex-col items-center">
@@ -121,35 +146,42 @@
         </p>
       </div>
     </div>
-
-    
   </main>
 
   <!-- Footer -->
-  
-<footer class="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-20 py-12 border-t border-[#e8f0f2] dark:border-[#1e2f32]">
-<div class="flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-[#538893] dark:text-[#a0bfc4]">
-<span>© 2024 Leng Songly</span>
-<span class="size-1 rounded-full bg-primary/40"></span>
-<span>Portfolio</span>
-</div>
-<div class="flex items-center gap-8">
-<a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
-<span class="material-symbols-outlined !text-xl">public</span>
-<span class="text-[10px] hidden sm:inline">LINKEDIN</span>
-</a>
-<a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
-<span class="material-symbols-outlined !text-xl">code</span>
-<span class="text-[10px] hidden sm:inline">GITHUB</span>
-</a>
-<a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
-<span class="material-symbols-outlined !text-xl">alternate_email</span>
-<span class="text-[10px] hidden sm:inline">EMAIL</span>
-</a>
-</div>
-</div>
-</footer>
-</body>
+  <footer class="max-w-[1280px] mx-auto px-6 md:px-12 lg:px-20 py-12 border-t border-[#e8f0f2] dark:border-[#1e2f32]">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-[#538893] dark:text-[#a0bfc4]">
+        <span>© 2024 Leng Songly</span>
+        <span class="size-1 rounded-full bg-primary/40"></span>
+        <span>Portfolio</span>
+      </div>
+      <div class="flex items-center gap-8">
+        <a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
+          <span class="material-symbols-outlined !text-xl">public</span>
+          <span class="text-[10px] hidden sm:inline">LINKEDIN</span>
+        </a>
+        <a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
+          <span class="material-symbols-outlined !text-xl">code</span>
+          <span class="text-[10px] hidden sm:inline">GITHUB</span>
+        </a>
+        <a class="text-[#538893] dark:text-[#a0bfc4] hover:text-primary transition-colors flex items-center gap-2" href="#">
+          <span class="material-symbols-outlined !text-xl">alternate_email</span>
+          <span class="text-[10px] hidden sm:inline">EMAIL</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Script -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
 </html>
